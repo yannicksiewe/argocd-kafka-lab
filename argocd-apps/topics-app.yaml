@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/yannicksiewe/argocd-kafka-lab.git
     targetRevision: HEAD
-    path: apk-cluster/topics
+    path: kafka-cluster/topics
   destination:
     name: in-cluster
     namespace: kafka
