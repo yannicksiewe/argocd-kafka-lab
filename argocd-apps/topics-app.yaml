@@ -11,7 +11,7 @@ spec:
     path: kafka-cluster/topics
   destination:
     name: in-cluster
-    namespace: kafka
+    namespace: default
   syncPolicy:
     automated:
       prune: true

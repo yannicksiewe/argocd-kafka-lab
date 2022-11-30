@@ -11,4 +11,4 @@ spec:
     path: argocd-apps
   destination:
     name: in-cluster
-    namespace: kafka
+    namespace: default
