@@ -4,14 +4,14 @@ metadata:
   name: strimziapp
   namespace: argocd
 spec:
-  project: default
+  project: cluster-management
   source:
-    repoURL: https://github.com/ehienabs/civo-kafka.git
+    repoURL: https://github.com/yannicksiewe/argocd-kafka-lab.git
     targetRevision: HEAD
     path: apk-cluster/strimzi-apk-cluster
   destination:
     name: in-cluster
-    namespace: default
+    namespace: kafka
   syncPolicy:
     automated:
       prune: true
